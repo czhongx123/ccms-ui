@@ -1,0 +1,75 @@
+{
+  "name": "dashboard",
+  "version": "0.0.1",
+  "description": "控制台框架",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:test": "vue-cli-service build --mode test"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "better-scroll": "^1.13.0",
+    "iview": "^3.1.1",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.11",
+    "qs": "^6.5.2",
+    "vue": "^2.5.17",
+    "vue-meta": "^1.5.3",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.3",
+    "@vue/cli-plugin-eslint": "^3.0.3",
+    "@vue/cli-service": "^3.0.3",
+    "@vue/eslint-config-prettier": "^3.0.3",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "style-resources-loader": "^1.2.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue-cli-plugin-iview": "^1.0.6",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/prettier"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "warn",
+        {
+          "singleQuote": true,
+          "semi": false
+        }
+      ],
+      "vue/no-parsing-error": [
+        "error",
+        {
+          "x-invalid-end-tag": false
+        }
+      ],
+      "no-console": 0
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
